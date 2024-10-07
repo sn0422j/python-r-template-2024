@@ -1,0 +1,28 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "context": "..",
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    // "--gpus=all"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sanaajani.taskrunnercode",
+        "oderwat.indent-rainbow",
+        "brunnerh.file-properties-viewer",
+        "christian-kohler.path-intellisense",
+        "mosapride.zenkaku",
+        "donjayamanne.githistory",
+        "mutantdino.resourcemonitor",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff",
+        "REditorSupport.r"
+      ]
+    }
+  },
+  "mounts": [],
+  "postStartCommand": ["/bin/bash", ".devcontainer/update-environment.sh"]
+}

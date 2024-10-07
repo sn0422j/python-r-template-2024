@@ -1,0 +1,74 @@
+[project]
+name = "python-template-2024"
+version = "0.0.0"
+dependencies = [
+  "rpy2[all]",
+  "pydantic",
+]
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+  "ipykernel",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+exclude = [
+  ".bzr",
+  ".direnv",
+  ".eggs",
+  ".git",
+  ".git-rewrite",
+  ".hg",
+  ".ipynb_checkpoints",
+  ".mypy_cache",
+  ".nox",
+  ".pants.d",
+  ".pyenv",
+  ".pytest_cache",
+  ".pytype",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".venv",
+  ".vscode",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "node_modules",
+  "site-packages",
+  "venv",
+  ".venv",
+  "__pycache__",
+]
+
+[tool.ruff.lint]
+select = [
+  "E",  # pycodestyle error
+  "F",  # pyflakes
+  "W",  # pycodestyle warning
+  "C90",  # mccabe
+  "I",  # isort
+  "C4",  # flake8-comprehensions
+  "PT",  # flake8-pytest-style
+  "RSE",  # flake8-raise
+  "TID",  # flake8-tidy-imports
+  "TCH",  # flake8-type-checking
+  "FLY",  # flynt
+  "NPY",  # numPy-specific rules
+  "RUF",  # ruff-specific rules
+  "T10",  # flake8-debugger
+  "PLR",  # pylint refactor
+ ]
+ignore = [
+  "PLR2004",  # magic-value-comparison
+]
+fixable = ["ALL"]
+unfixable = [
+  "F401",  # unused-import
+]

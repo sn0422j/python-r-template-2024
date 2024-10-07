@@ -1,0 +1,23 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+    },
+    "[r]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.tabSize": 2,
+    },
+    "ruff.fixAll": true,
+    "notebook.formatOnSave.enabled": false,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    "python.defaultInterpreterPath": "/tmp/python-venv/.venv/bin/python",
+    "terminal.integrated.defaultProfile.linux": "bash",
+}
